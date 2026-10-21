@@ -1,0 +1,17 @@
+<!-- Настройки сборки приложения на .NET SDK. WPF включает поддержку XAML и Windows UI. -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <!-- WinExe запускает приложение как Windows-программу, без консольного окна. -->
+        <OutputType>WinExe</OutputType>
+        <!-- Для запуска требуется Windows, поскольку приложение использует WPF. -->
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <!-- Компилятор предупреждает о возможном использовании null для обычных типов. -->
+        <Nullable>enable</Nullable>
+        <!-- Подключает часто используемые пространства имён автоматически. -->
+        <ImplicitUsings>enable</ImplicitUsings>
+        <!-- Включает компиляцию XAML-разметки и библиотеку WPF. -->
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+</Project>
